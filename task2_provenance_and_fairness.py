@@ -109,8 +109,10 @@ def execute_pipeline(seed):
 
     print('---------------------------------------------------------------------')
     print(f'Executing pipeline with seed {seed}')
-    print('---------------------------------------------------------------------')
+    print('---------------------------------------------------------------------')  
 
+    # Note that you can rewrite/change the code starting from here! 
+    
     numerical_columns = random_subset(['total_votes', 'star_rating'])
     categorical_columns = random_subset(['customer_id', 'product_id', 'vine', 'category'])
     final_columns = numerical_columns + categorical_columns + ['text', 'is_helpful', 'review_date']
