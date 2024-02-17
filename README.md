@@ -16,7 +16,7 @@ We ask you to prepare the data and create a training pipeline for a classifier t
 
  1. The method `define_training_pipeline` should setup an [sklearn pipeline](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) to encode the data into features and train a model to predict the category. Additionally, we ask you to make sure that your pipelines uses 5-fold cross-validation to select the hyperparameters of your model (among 3-5 candidate hyperparameter values). We strongly recommend that you use appropriate abstractions from scikit-learn here.
 
-Note that your pipeline should reach an accuracy of over 90% on the test data. You can use the unit test [test_task1.py](blob/main/test_task1.py) to help you with development here. You can execute it via `pytest test_task1.py -s`.
+Note that your pipeline should reach an accuracy of over 90% on the test data. You can use the unit test [test_task1.py](test_task1.py) to help you with development here. You can execute it via `pytest test_task1.py -s`.
 
 
 ## Task 2 - Provenance and fairness in pipelines (3 points)
