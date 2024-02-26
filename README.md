@@ -23,7 +23,7 @@ Note that your pipeline should reach an accuracy of over 90% on the test data. Y
 
 We provide a fully working [ML pipeline](task2_provenance_and_fairness.py) for you which trains a classifier to predict which reviews are helpful. In this task, we ask you to write the pipeline to compute important meta information.
 
- * **Group Fairness (1 point)** -- Compute the fairness of the pipeline with respect to third party reviews. In particular, compute the predictive parity metric (the difference in true positive rates) between reviews from a third party and reviews not from a third party.
+ * **Group Fairness (1 point)** -- Compute the fairness of the pipeline with respect to third party reviews. In particular, compute the predictive parity metric (the difference in positive predicted value (PPV) see https://en.wikipedia.org/wiki/Fairness_(machine_learning) ) between reviews from a third party and reviews not from a third party.
 
  * **Provenance (2 points)** -- Compute which records from the ratings and products relation are used to train the classifier. Compute two boolean arrays with a dimensionality similar to the cardinality of the relations, where the entry at position i denotes whether the i-th record is included in the training data of the classifier. Let's for example say there are 100 rows of products in the input data. The code might only use some of them for training. The others might be filtered out earlier or used for testing.
    So your task is to compute a boolean array with 100 entries and only set a particular entry to true of the corresponding product row is used for training.
